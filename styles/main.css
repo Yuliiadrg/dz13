@@ -1,0 +1,139 @@
+/*main*/
+main {
+    margin-top: 75px;
+    background-image: url(../images/bg-picture.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: right;
+    background-position-y: 190px;
+}
+/* animation: 5s linear 0s normal none infinite running rot; 
+-webkit-animation: 5s linear 0s normal none infinite running rot; */
+/* @keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+section {
+    padding: 35px 0;
+}
+
+.section-container {
+    padding-top: 35px;
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    font-family: var(--title-font-family);
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 85px;
+    margin-bottom: 40px;
+}
+
+.title::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 7px;
+    background-color: #000000;
+    left: 0;
+    bottom: 80px;
+}
+
+.sup-title {
+    font-family: var(--title-sup-font-family);
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+
+    /* margin-bottom: 40px; */
+}
+
+.underlined-text {
+    text-decoration: underline;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.font-text {
+    background-color: var(--accent-background-color);
+}
+
+.section-text {
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.container .section-text:not(:last-child) {
+    margin-bottom: 40px;
+}
+/*aside*/
+.grid-box {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 370px 790px;
+    grid-gap: 40px;
+    align-items: start;
+    padding-bottom: 500px;
+}
+
+.main-aside {
+    position: sticky;
+    top: 100px;
+    padding-top: 85px;
+}
+
+.aside-list {
+    font-family: var(--title-font-family);
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.aside-list-item {
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--accent-background-color);
+}
+
+.aside-list .aside-list-item:not(:last-child) {
+    margin-bottom: 75px;
+}
+/*aside effect*/
+.aside-link {
+    cursor: pointer;
+    text-shadow: 0 0 3px #000000;
+    color: transparent;
+    transition: all .4s;
+}
+.aside-link:hover {
+    text-shadow: 0 0 0 #000000;
+}
+
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>KONSTRUKT</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container nav-flex">
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="" class="nav-list-link-lang">ENG</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="index.html" class="nav-list-link active">Documentation</a>
+                    </li>
+                    <li class="nav-list-item">
+                        /
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="./pages/whoUsing.html" class="nav-list-link">Who's using</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="" class="logo-link">
+                <svg class="logo-link-icon" width="238" height="54">
+                    <use href="./images/logo.svg#icon-logo"></use>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container grid-box">
+            <aside class="main-aside">
+                <ul class="aside-list">
+                    <li class="aside-list-item">
+                        <a href="#intro-section" class="aside-link">
+                            Introduction
+                        </a>
+                    </li>
+                    <li class="aside-list-item">
+                        <a href="#components-section" class="aside-link">
+                            Core components
+                        </a>
+                    </li>
+                    <li class="aside-list-item">
+                        <a href="#react-section" class="aside-link">
+                            React fundamentals
+                        </a>
+                    </li>
+                    <li class="aside-list-item">
+                        <a href="#input-section" class="aside-link">
+                            Handling text input
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="section-box">
+                <section id="intro-section">
+                    <div class="section-container">
+                        <div class="title-box">
+                            <h2 class="title">Introduction</h2>
+                            <p class="sup-title">Chapter 1</p>
+                        </div>
+                        <p class="section-text">
+                            Welcome to the very start of your React Native journey! If you're
+                            looking for environment setup instructions, they've moved to
+                            <span class="underlined-text">their own section</span>.
+                            Continue reading for an introduction to the
+                            documentation, Native Components, React, and more!
+                        </p>
+                    </div>
+                </section>
+                <section id="components-section">
+                    <div class="section-container">
+                        <div class="title-box">
+                            <h2 class="title">Core components</h2>
+                            <p class="sup-title">Chapter 2</p>
+                        </div>
+                        <p class="section-text">
+                            React Native is an open source framework for building Android and iOS applications using
+                            React and the app platform's native capabiles. With React Native, you use JavaScript to
+                            access your platform's APIs as well as to describe the appearance and behavior of your UI
+                            using React components:
+                            <span class="italic-text">bundles of reusable, nestable code</span> . You can learn more
+                            about React in the next section. But first, let's cover how components work in React Native.
+                        </p>
+                    </div>
+                </section>
+                <section id="react-section">
+                    <div class="section-container">
+                        <div class="title-box">
+                            <h2 class="title">React fundamentals</h2>
+                            <p class="sup-title">Chapter 3</p>
+                        </div>
+                        <p class="section-text">
+                            React Native runs on <span class="underlined-text">React</span>, a popular open source
+                            library for building user interfaces with
+                            JavaScript. To make the most of React Native, it helps to understand React itself. This
+                            section can get you started or can serve as a refresher course.
+                        </p>
+                        <p class="section-text">
+                            We're going to cover the core concepts behind React:
+                        </p>
+                        <p class="section-text">
+                            <span class="bold-text">+ components</span>. The rest of this introduction to React uses
+                            cats in its examples: friendly,
+                            approachable creatures that need names and a cafe to work in.
+                        </p>
+                        <p class="section-text">
+                            <span class="bold-text">+ JSX</span> .
+                            React and React Native use JSX, a syntax that lets you write
+                            elements inside JavaScript like so:
+                            <span class="font-text"> &lt;Text&gt;Hello, I am your
+                                cat!&lt;/Text&gt;</span>.
+                        </p>
+                        <p class="section-text">
+                            The React docs have a <span class="underlined-text">comprehensive guide to JSX</span>
+                            you can refer to learn even more. Because JSX is
+                            JavaScript, you can use variables inside it. Here you are declaring a
+                            <span class="font-text"> name</span> for the cat, name, and
+                            embedding it with curly braces inside
+                            <span class="font-text"> &lt;Text&gt;</span>
+                        </p>
+                        <p class="section-text">
+                            <span class="bold-text">+ props</span>. Props is short for “properties”.
+                        </p>
+                        <p class="section-text">
+                            <span class="bold-text">+ state</span>. While you can think of props as arguments you use to
+                            configure how components render, state
+                            is like a component's personal data storage. State is useful for handling data that changes
+                            over time or that comes from user interaction. State gives your components memory!
+                        </p>
+                    </div>
+                </section>
+                <section id="input-section">
+                    <div class="container">
+                        <div class="title-box">
+                            <h2 class="title">Handling text input</h2>
+                            <p class="sup-title">Chapter 4</p>
+                        </div>
+                        <p class="section-text">
+                            TextInput is a Core Component that allows the user to enter text. It has an
+                            <span class="italic-text"> onChangeText </span> prop that
+                            takes a function to be called every time the text changed,
+                            and an onSubmitEditing prop that takes a function to be
+                            called when the text is submitted.
+                        </p>
+                        <p class="section-text">
+                            For example, let's say that as the user types, you're translating their words into a
+                            different language. In this new language, every single word is written the same way: 🍕. So
+                            the sentence "Hello there Bob" would be translated as "🍕 🍕".
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

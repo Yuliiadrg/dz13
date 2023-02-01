@@ -1,0 +1,101 @@
+:root {
+    --main-font-family: 'PT Sans400', sans-serif;
+    --accent-main-font-family: 'PT Sans700', sans-serif;
+
+    --accent-nav-font-family: 'TourneySemiBold', cursive;
+    --nav-font-family: 'Staatliches400', cursive;
+
+    --title-font-family: 'Francois One400', sans-serif;
+    --title-sup-font-family: 'Farro300', sans-serif;
+
+    --main-background-color: #fff;
+    --accent-background-color: #DADADA;
+    --back-card-color: #1A1A1A;
+}
+
+main {
+    margin-top: 155px;
+    padding-bottom: 500px;
+}
+
+.using-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    /* because we haven't semi-bold weight 600*/
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+
+    padding-left: 120px;
+    position: relative;
+}
+
+.using-title::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 7px;
+    background-color: var(--back-card-color);
+    top: 20px;
+    left: 0; 
+}
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.card-list-item {
+    width: 270px;
+    height: 180px;
+    position: relative;
+    cursor: pointer;
+}
+.card-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box-card {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px 0;
+    border-top: 1px solid var(--accent-background-color);
+    border-bottom: 1px solid var(--accent-background-color);
+}
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card-front {
+    position: relative;
+    background-color: var(--accent-background-color);
+    border-radius: 8px;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.8s cubic-bezier(.17, .67, .83, .67);
+}
+
+.card-back {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: var(--back-card-color);
+    border-radius: 8px;
+    transform: rotateX(-180deg);
+    transition: transform 0.8s cubic-bezier(.17, .67, .83, .67);
+}
+
+.card:hover .card-back {
+    transform: rotateX(0deg);
+}
+
+.card:hover .card-front {
+    transform: rotateX(180deg);
+}

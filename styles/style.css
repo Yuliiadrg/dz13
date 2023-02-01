@@ -1,0 +1,78 @@
+:root {
+    --main-font-family: 'PT Sans400', sans-serif;
+    --accent-main-font-family: 'PT Sans700', sans-serif;
+
+    --accent-nav-font-family: 'TourneySemiBold', cursive;
+    --nav-font-family: 'Staatliches400', cursive;
+
+    --title-font-family: 'Francois One400', sans-serif;
+    --title-sup-font-family: 'Farro300', sans-serif;
+
+    --main-background-color: #fff;
+    --accent-background-color: #DADADA;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-style: normal;
+    font-family: var(--main-font-family);
+    color: #000000;
+}
+.container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/*header*/
+.main-header {
+    padding: 13px 0;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    background-color: var(--main-background-color);
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-list-item {
+    font-family: var(--nav-font-family);
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+}
+.nav-list-link-lang {
+    font-family: var(--accent-nav-font-family);
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    margin-right: 40px;
+}
+/*put on glasses :) blur effect*/
+.nav-list-link {
+    cursor: pointer;
+    text-shadow: 0 0 10px #000000;
+    color: transparent;
+    transition: all .4s;
+}
+.nav-list-link:hover {
+    text-shadow: 0 0 0 #000000;
+}
+.active {
+    text-shadow: 0 0 0 #000000;
+}
